@@ -1,0 +1,1028 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		E3A7E0D216B929D900AF7453 /* FrameworkGLHTTPServer */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E3A7E0DA16B929D900AF7453 /* Build configuration list for PBXAggregateTarget "FrameworkGLHTTPServer" */;
+			buildPhases = (
+				E3A7E0DC16B929EA00AF7453 /* ShellScript */,
+			);
+			dependencies = (
+				E3A7E0DE16B929F200AF7453 /* PBXTargetDependency */,
+			);
+			name = FrameworkGLHTTPServer;
+			productName = FrameworkGLHTTPServer;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		7480275F16F0B0A200D7797A /* GLHTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FA4ECD16AE685200A7F25A /* GLHTTPServer.m */; };
+		7480276016F0B0A200D7797A /* GLHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FA4F8416AEBC9500A7F25A /* GLHTTPRequest.m */; };
+		7480276116F0B0A200D7797A /* GLHTTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FA4F8716AEBC9500A7F25A /* GLHTTPResponse.m */; };
+		7480276216F0B0A200D7797A /* GLHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FA4F8E16AEC6C500A7F25A /* GLHTTPConnection.m */; };
+		7480276316F0B0A200D7797A /* HTTPResponseBasicImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = A026F58116AECC2A0026995B /* HTTPResponseBasicImpl.m */; };
+		7480276416F0B0A200D7797A /* HTTPServerEx.m in Sources */ = {isa = PBXBuildFile; fileRef = A026F58B16AECD930026995B /* HTTPServerEx.m */; };
+		7480276616F0B0A200D7797A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0FA4E7016AE66AC00A7F25A /* Foundation.framework */; };
+		7480276816F0B0A200D7797A /* GLHTTPServer.h in Headers */ = {isa = PBXBuildFile; fileRef = A0FA4ECC16AE685200A7F25A /* GLHTTPServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7480276916F0B0A200D7797A /* GLHTTPServerFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = A0FA4E7516AE66AC00A7F25A /* GLHTTPServerFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7480276A16F0B0A200D7797A /* GLHTTPRequestDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = A0FA4F8516AEBC9500A7F25A /* GLHTTPRequestDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7480276B16F0B0A200D7797A /* GLHTTPResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = A0FA4F8616AEBC9500A7F25A /* GLHTTPResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7480276C16F0B0A200D7797A /* GLHTTPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = A0FA4F8316AEBC9500A7F25A /* GLHTTPRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7480276D16F0B0A200D7797A /* GLHTTPConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = A0FA4F8D16AEC6C400A7F25A /* GLHTTPConnection.h */; };
+		7480276E16F0B0A200D7797A /* HTTPResponseBasicImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = A026F58016AECC2A0026995B /* HTTPResponseBasicImpl.h */; };
+		7480276F16F0B0A200D7797A /* HTTPServerEx.h in Headers */ = {isa = PBXBuildFile; fileRef = A026F58A16AECD930026995B /* HTTPServerEx.h */; };
+		A026F58416AECC2A0026995B /* HTTPResponseBasicImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = A026F58016AECC2A0026995B /* HTTPResponseBasicImpl.h */; };
+		A026F58516AECC2A0026995B /* HTTPResponseBasicImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = A026F58116AECC2A0026995B /* HTTPResponseBasicImpl.m */; };
+		A026F58616AECC2A0026995B /* HTTPResponseBasicImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = A026F58116AECC2A0026995B /* HTTPResponseBasicImpl.m */; };
+		A026F58C16AECD940026995B /* HTTPServerEx.h in Headers */ = {isa = PBXBuildFile; fileRef = A026F58A16AECD930026995B /* HTTPServerEx.h */; };
+		A026F58D16AECD940026995B /* HTTPServerEx.m in Sources */ = {isa = PBXBuildFile; fileRef = A026F58B16AECD930026995B /* HTTPServerEx.m */; };
+		A026F58E16AECD940026995B /* HTTPServerEx.m in Sources */ = {isa = PBXBuildFile; fileRef = A026F58B16AECD930026995B /* HTTPServerEx.m */; };
+		A026F65016AFD5230026995B /* GLHTTPServerFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = A0FA4E7516AE66AC00A7F25A /* GLHTTPServerFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A026F66916AFD60E0026995B /* GLHTTPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = A0FA4F8316AEBC9500A7F25A /* GLHTTPRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A026F66C16AFD6280026995B /* GLHTTPResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = A0FA4F8616AEBC9500A7F25A /* GLHTTPResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A026F66D16AFD62E0026995B /* GLHTTPRequestDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = A0FA4F8516AEBC9500A7F25A /* GLHTTPRequestDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A067871616AFFBDF009AA705 /* GLHTTPServer.h in Headers */ = {isa = PBXBuildFile; fileRef = A0FA4ECC16AE685200A7F25A /* GLHTTPServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0FA4E7116AE66AC00A7F25A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0FA4E7016AE66AC00A7F25A /* Foundation.framework */; };
+		A0FA4E8016AE66AE00A7F25A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0FA4E7F16AE66AE00A7F25A /* SenTestingKit.framework */; };
+		A0FA4E8316AE66AF00A7F25A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0FA4E7016AE66AC00A7F25A /* Foundation.framework */; };
+		A0FA4E8616AE66AF00A7F25A /* libGLHTTPServerFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0FA4E6D16AE66AC00A7F25A /* libGLHTTPServerFramework.a */; };
+		A0FA4E8C16AE66AF00A7F25A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A0FA4E8A16AE66AF00A7F25A /* InfoPlist.strings */; };
+		A0FA4E8F16AE66AF00A7F25A /* GLHTTPServerFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FA4E8E16AE66AF00A7F25A /* GLHTTPServerFrameworkTests.m */; };
+		A0FA4ED116AE685200A7F25A /* GLHTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FA4ECD16AE685200A7F25A /* GLHTTPServer.m */; };
+		A0FA4F8916AEBC9500A7F25A /* GLHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FA4F8416AEBC9500A7F25A /* GLHTTPRequest.m */; };
+		A0FA4F8C16AEBC9600A7F25A /* GLHTTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FA4F8716AEBC9500A7F25A /* GLHTTPResponse.m */; };
+		A0FA4F8F16AEC6C600A7F25A /* GLHTTPConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = A0FA4F8D16AEC6C400A7F25A /* GLHTTPConnection.h */; };
+		A0FA4F9016AEC6C600A7F25A /* GLHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FA4F8E16AEC6C500A7F25A /* GLHTTPConnection.m */; };
+		A0FA50BF16AFDF3C00A7F25A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0FA50BE16AFDF3C00A7F25A /* UIKit.framework */; };
+		A0FA50C016AFDF3C00A7F25A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0FA4E7016AE66AC00A7F25A /* Foundation.framework */; };
+		A0FA50C216AFDF3C00A7F25A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0FA50C116AFDF3C00A7F25A /* CoreGraphics.framework */; };
+		A0FA50C816AFDF3C00A7F25A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A0FA50C616AFDF3C00A7F25A /* InfoPlist.strings */; };
+		A0FA50CA16AFDF3C00A7F25A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FA50C916AFDF3C00A7F25A /* main.m */; };
+		A0FA50CE16AFDF3C00A7F25A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FA50CD16AFDF3C00A7F25A /* AppDelegate.m */; };
+		A0FA50D016AFDF3C00A7F25A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A0FA50CF16AFDF3C00A7F25A /* Default.png */; };
+		A0FA50D216AFDF3C00A7F25A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0FA50D116AFDF3C00A7F25A /* Default@2x.png */; };
+		A0FA50D416AFDF3C00A7F25A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0FA50D316AFDF3C00A7F25A /* Default-568h@2x.png */; };
+		A0FA50D716AFDF3C00A7F25A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FA50D616AFDF3C00A7F25A /* ViewController.m */; };
+		A0FA50DA16AFDF3C00A7F25A /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0FA50D816AFDF3C00A7F25A /* ViewController.xib */; };
+		A0FA50E316AFDFB000A7F25A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0FA50E216AFDFB000A7F25A /* CFNetwork.framework */; };
+		A0FA50FC16AFFE6800A7F25A /* libGLHTTPServerFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0FA4E6D16AE66AC00A7F25A /* libGLHTTPServerFramework.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7480269316F09B8C00D7797A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7480268916F09B8C00D7797A /* CocoaHTTPServer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 84C08BBF149F64A0001D6500;
+			remoteInfo = CocoaHTTPServer;
+		};
+		7480269516F09BAE00D7797A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7480268916F09B8C00D7797A /* CocoaHTTPServer.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 84C08BBE149F64A0001D6500;
+			remoteInfo = CocoaHTTPServer;
+		};
+		7480273316F0A9FF00D7797A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7480268916F09B8C00D7797A /* CocoaHTTPServer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7480273116F0A98C00D7797A;
+			remoteInfo = CocoaHTTPServerMac;
+		};
+		7480277516F0B0EC00D7797A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7480268916F09B8C00D7797A /* CocoaHTTPServer.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 7480270616F0A98C00D7797A;
+			remoteInfo = CocoaHTTPServerMac;
+		};
+		A0FA4E8416AE66AF00A7F25A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0FA4E6416AE66AB00A7F25A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0FA4E6C16AE66AC00A7F25A;
+			remoteInfo = GLHTTPServerFramework;
+		};
+		A0FA50DE16AFDF7A00A7F25A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0FA4E6416AE66AB00A7F25A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0FA4E6C16AE66AC00A7F25A;
+			remoteInfo = GLHTTPServerFramework;
+		};
+		E3A7E0DD16B929F200AF7453 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0FA4E6416AE66AB00A7F25A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0FA4E6C16AE66AC00A7F25A;
+			remoteInfo = GLHTTPServerFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7480268916F09B8C00D7797A /* CocoaHTTPServer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CocoaHTTPServer.xcodeproj; path = ../CocoaHTTPServer/CocoaHTTPServer.xcodeproj; sourceTree = "<group>"; };
+		748026C816F0A81D00D7797A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		748026CB16F0A81D00D7797A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		748026CC16F0A81D00D7797A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		748026CD16F0A81D00D7797A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		748026D016F0A81D00D7797A /* GLHTTPServerMac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GLHTTPServerMac-Info.plist"; sourceTree = "<group>"; };
+		748026D216F0A81D00D7797A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		748026D416F0A81D00D7797A /* GLHTTPServerMac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLHTTPServerMac-Prefix.pch"; sourceTree = "<group>"; };
+		748026D516F0A81D00D7797A /* GLHTTPServerMac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLHTTPServerMac.h; sourceTree = "<group>"; };
+		748026D616F0A81D00D7797A /* GLHTTPServerMac.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLHTTPServerMac.m; sourceTree = "<group>"; };
+		7480275716F0B06200D7797A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		7480275916F0B07B00D7797A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		7480277416F0B0A200D7797A /* libGLHTTPServerFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGLHTTPServerFramework.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A026F58016AECC2A0026995B /* HTTPResponseBasicImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPResponseBasicImpl.h; path = GLHTTPServerFramework/CocoaHTTPServerEx/HTTPResponseBasicImpl.h; sourceTree = "<group>"; };
+		A026F58116AECC2A0026995B /* HTTPResponseBasicImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTTPResponseBasicImpl.m; path = GLHTTPServerFramework/CocoaHTTPServerEx/HTTPResponseBasicImpl.m; sourceTree = "<group>"; };
+		A026F58A16AECD930026995B /* HTTPServerEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPServerEx.h; path = GLHTTPServerFramework/CocoaHTTPServerEx/HTTPServerEx.h; sourceTree = "<group>"; };
+		A026F58B16AECD930026995B /* HTTPServerEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTTPServerEx.m; path = GLHTTPServerFramework/CocoaHTTPServerEx/HTTPServerEx.m; sourceTree = "<group>"; };
+		A0FA4E6D16AE66AC00A7F25A /* libGLHTTPServerFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGLHTTPServerFramework.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0FA4E7016AE66AC00A7F25A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A0FA4E7416AE66AC00A7F25A /* GLHTTPServerFramework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLHTTPServerFramework-Prefix.pch"; sourceTree = "<group>"; };
+		A0FA4E7516AE66AC00A7F25A /* GLHTTPServerFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLHTTPServerFramework.h; sourceTree = "<group>"; };
+		A0FA4E7E16AE66AE00A7F25A /* GLHTTPServerFrameworkTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GLHTTPServerFrameworkTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0FA4E7F16AE66AE00A7F25A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A0FA4E8916AE66AF00A7F25A /* GLHTTPServerFrameworkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GLHTTPServerFrameworkTests-Info.plist"; sourceTree = "<group>"; };
+		A0FA4E8B16AE66AF00A7F25A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A0FA4E8D16AE66AF00A7F25A /* GLHTTPServerFrameworkTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLHTTPServerFrameworkTests.h; sourceTree = "<group>"; };
+		A0FA4E8E16AE66AF00A7F25A /* GLHTTPServerFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLHTTPServerFrameworkTests.m; sourceTree = "<group>"; };
+		A0FA4ECC16AE685200A7F25A /* GLHTTPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLHTTPServer.h; sourceTree = "<group>"; };
+		A0FA4ECD16AE685200A7F25A /* GLHTTPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLHTTPServer.m; sourceTree = "<group>"; };
+		A0FA4F8316AEBC9500A7F25A /* GLHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLHTTPRequest.h; sourceTree = "<group>"; };
+		A0FA4F8416AEBC9500A7F25A /* GLHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLHTTPRequest.m; sourceTree = "<group>"; };
+		A0FA4F8516AEBC9500A7F25A /* GLHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		A0FA4F8616AEBC9500A7F25A /* GLHTTPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLHTTPResponse.h; sourceTree = "<group>"; };
+		A0FA4F8716AEBC9500A7F25A /* GLHTTPResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLHTTPResponse.m; sourceTree = "<group>"; };
+		A0FA4F8D16AEC6C400A7F25A /* GLHTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLHTTPConnection.h; sourceTree = "<group>"; };
+		A0FA4F8E16AEC6C500A7F25A /* GLHTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLHTTPConnection.m; sourceTree = "<group>"; };
+		A0FA50BC16AFDF3B00A7F25A /* GLHTTPServerTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLHTTPServerTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0FA50BE16AFDF3C00A7F25A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A0FA50C116AFDF3C00A7F25A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A0FA50C516AFDF3C00A7F25A /* GLHTTPServerTestApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GLHTTPServerTestApp-Info.plist"; sourceTree = "<group>"; };
+		A0FA50C716AFDF3C00A7F25A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A0FA50C916AFDF3C00A7F25A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A0FA50CB16AFDF3C00A7F25A /* GLHTTPServerTestApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLHTTPServerTestApp-Prefix.pch"; sourceTree = "<group>"; };
+		A0FA50CC16AFDF3C00A7F25A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A0FA50CD16AFDF3C00A7F25A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A0FA50CF16AFDF3C00A7F25A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		A0FA50D116AFDF3C00A7F25A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		A0FA50D316AFDF3C00A7F25A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A0FA50D516AFDF3C00A7F25A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A0FA50D616AFDF3C00A7F25A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A0FA50D916AFDF3C00A7F25A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		A0FA50E216AFDFB000A7F25A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7480276516F0B0A200D7797A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7480276616F0B0A200D7797A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0FA4E6A16AE66AC00A7F25A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0FA4E7116AE66AC00A7F25A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0FA4E7A16AE66AE00A7F25A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0FA4E8016AE66AE00A7F25A /* SenTestingKit.framework in Frameworks */,
+				A0FA4E8316AE66AF00A7F25A /* Foundation.framework in Frameworks */,
+				A0FA4E8616AE66AF00A7F25A /* libGLHTTPServerFramework.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0FA50B916AFDF3B00A7F25A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0FA50FC16AFFE6800A7F25A /* libGLHTTPServerFramework.a in Frameworks */,
+				A0FA50E316AFDFB000A7F25A /* CFNetwork.framework in Frameworks */,
+				A0FA50BF16AFDF3C00A7F25A /* UIKit.framework in Frameworks */,
+				A0FA50C016AFDF3C00A7F25A /* Foundation.framework in Frameworks */,
+				A0FA50C216AFDF3C00A7F25A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7480268A16F09B8C00D7797A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7480269416F09B8C00D7797A /* libCocoaHTTPServer.a */,
+				7480273416F0A9FF00D7797A /* libCocoaHTTPServer.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		748026CA16F0A81D00D7797A /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				748026CB16F0A81D00D7797A /* AppKit.framework */,
+				748026CC16F0A81D00D7797A /* CoreData.framework */,
+				748026CD16F0A81D00D7797A /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		748026CE16F0A81D00D7797A /* GLHTTPServerMac */ = {
+			isa = PBXGroup;
+			children = (
+				748026D516F0A81D00D7797A /* GLHTTPServerMac.h */,
+				748026D616F0A81D00D7797A /* GLHTTPServerMac.m */,
+				748026CF16F0A81D00D7797A /* Supporting Files */,
+			);
+			path = GLHTTPServerMac;
+			sourceTree = "<group>";
+		};
+		748026CF16F0A81D00D7797A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				748026D016F0A81D00D7797A /* GLHTTPServerMac-Info.plist */,
+				748026D116F0A81D00D7797A /* InfoPlist.strings */,
+				748026D416F0A81D00D7797A /* GLHTTPServerMac-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A026F57F16AECBD30026995B /* CocoaHTTPServerEx */ = {
+			isa = PBXGroup;
+			children = (
+				A026F58A16AECD930026995B /* HTTPServerEx.h */,
+				A026F58B16AECD930026995B /* HTTPServerEx.m */,
+				A026F58016AECC2A0026995B /* HTTPResponseBasicImpl.h */,
+				A026F58116AECC2A0026995B /* HTTPResponseBasicImpl.m */,
+			);
+			name = CocoaHTTPServerEx;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		A0FA4E6216AE66AB00A7F25A = {
+			isa = PBXGroup;
+			children = (
+				7480275916F0B07B00D7797A /* Security.framework */,
+				7480275716F0B06200D7797A /* CFNetwork.framework */,
+				A0FA4E7216AE66AC00A7F25A /* GLHTTPServerFramework */,
+				A0FA4E8716AE66AF00A7F25A /* GLHTTPServerFrameworkTests */,
+				A0FA50C316AFDF3C00A7F25A /* GLHTTPServerTestApp */,
+				748026CE16F0A81D00D7797A /* GLHTTPServerMac */,
+				A0FA4E6F16AE66AC00A7F25A /* Frameworks */,
+				A0FA4E6E16AE66AC00A7F25A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A0FA4E6E16AE66AC00A7F25A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0FA4E6D16AE66AC00A7F25A /* libGLHTTPServerFramework.a */,
+				A0FA4E7E16AE66AE00A7F25A /* GLHTTPServerFrameworkTests.octest */,
+				A0FA50BC16AFDF3B00A7F25A /* GLHTTPServerTestApp.app */,
+				7480277416F0B0A200D7797A /* libGLHTTPServerFramework.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0FA4E6F16AE66AC00A7F25A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7480268916F09B8C00D7797A /* CocoaHTTPServer.xcodeproj */,
+				A0FA4E7016AE66AC00A7F25A /* Foundation.framework */,
+				A0FA4E7F16AE66AE00A7F25A /* SenTestingKit.framework */,
+				A0FA50BE16AFDF3C00A7F25A /* UIKit.framework */,
+				A0FA50C116AFDF3C00A7F25A /* CoreGraphics.framework */,
+				748026C816F0A81D00D7797A /* Cocoa.framework */,
+				748026CA16F0A81D00D7797A /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0FA4E7216AE66AC00A7F25A /* GLHTTPServerFramework */ = {
+			isa = PBXGroup;
+			children = (
+				A026F57F16AECBD30026995B /* CocoaHTTPServerEx */,
+				A0FA4F8D16AEC6C400A7F25A /* GLHTTPConnection.h */,
+				A0FA4F8E16AEC6C500A7F25A /* GLHTTPConnection.m */,
+				A0FA4F8316AEBC9500A7F25A /* GLHTTPRequest.h */,
+				A0FA4F8416AEBC9500A7F25A /* GLHTTPRequest.m */,
+				A0FA4F8516AEBC9500A7F25A /* GLHTTPRequestDelegate.h */,
+				A0FA4F8616AEBC9500A7F25A /* GLHTTPResponse.h */,
+				A0FA4ECC16AE685200A7F25A /* GLHTTPServer.h */,
+				A0FA4F8716AEBC9500A7F25A /* GLHTTPResponse.m */,
+				A0FA4ECD16AE685200A7F25A /* GLHTTPServer.m */,
+				A0FA4E7516AE66AC00A7F25A /* GLHTTPServerFramework.h */,
+				A0FA4E7316AE66AC00A7F25A /* Supporting Files */,
+			);
+			path = GLHTTPServerFramework;
+			sourceTree = "<group>";
+		};
+		A0FA4E7316AE66AC00A7F25A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A0FA4E7416AE66AC00A7F25A /* GLHTTPServerFramework-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A0FA4E8716AE66AF00A7F25A /* GLHTTPServerFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				A0FA4E8D16AE66AF00A7F25A /* GLHTTPServerFrameworkTests.h */,
+				A0FA4E8E16AE66AF00A7F25A /* GLHTTPServerFrameworkTests.m */,
+				A0FA4E8816AE66AF00A7F25A /* Supporting Files */,
+			);
+			path = GLHTTPServerFrameworkTests;
+			sourceTree = "<group>";
+		};
+		A0FA4E8816AE66AF00A7F25A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A0FA4E8916AE66AF00A7F25A /* GLHTTPServerFrameworkTests-Info.plist */,
+				A0FA4E8A16AE66AF00A7F25A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A0FA50C316AFDF3C00A7F25A /* GLHTTPServerTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				A0FA50E216AFDFB000A7F25A /* CFNetwork.framework */,
+				A0FA50CC16AFDF3C00A7F25A /* AppDelegate.h */,
+				A0FA50CD16AFDF3C00A7F25A /* AppDelegate.m */,
+				A0FA50D516AFDF3C00A7F25A /* ViewController.h */,
+				A0FA50D616AFDF3C00A7F25A /* ViewController.m */,
+				A0FA50D816AFDF3C00A7F25A /* ViewController.xib */,
+				A0FA50C416AFDF3C00A7F25A /* Supporting Files */,
+			);
+			path = GLHTTPServerTestApp;
+			sourceTree = "<group>";
+		};
+		A0FA50C416AFDF3C00A7F25A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A0FA50C516AFDF3C00A7F25A /* GLHTTPServerTestApp-Info.plist */,
+				A0FA50C616AFDF3C00A7F25A /* InfoPlist.strings */,
+				A0FA50C916AFDF3C00A7F25A /* main.m */,
+				A0FA50CB16AFDF3C00A7F25A /* GLHTTPServerTestApp-Prefix.pch */,
+				A0FA50CF16AFDF3C00A7F25A /* Default.png */,
+				A0FA50D116AFDF3C00A7F25A /* Default@2x.png */,
+				A0FA50D316AFDF3C00A7F25A /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7480276716F0B0A200D7797A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7480276816F0B0A200D7797A /* GLHTTPServer.h in Headers */,
+				7480276916F0B0A200D7797A /* GLHTTPServerFramework.h in Headers */,
+				7480276A16F0B0A200D7797A /* GLHTTPRequestDelegate.h in Headers */,
+				7480276B16F0B0A200D7797A /* GLHTTPResponse.h in Headers */,
+				7480276C16F0B0A200D7797A /* GLHTTPRequest.h in Headers */,
+				7480276D16F0B0A200D7797A /* GLHTTPConnection.h in Headers */,
+				7480276E16F0B0A200D7797A /* HTTPResponseBasicImpl.h in Headers */,
+				7480276F16F0B0A200D7797A /* HTTPServerEx.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A026F53D16AE7FCF0026995B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A067871616AFFBDF009AA705 /* GLHTTPServer.h in Headers */,
+				A026F65016AFD5230026995B /* GLHTTPServerFramework.h in Headers */,
+				A026F66D16AFD62E0026995B /* GLHTTPRequestDelegate.h in Headers */,
+				A026F66C16AFD6280026995B /* GLHTTPResponse.h in Headers */,
+				A026F66916AFD60E0026995B /* GLHTTPRequest.h in Headers */,
+				A0FA4F8F16AEC6C600A7F25A /* GLHTTPConnection.h in Headers */,
+				A026F58416AECC2A0026995B /* HTTPResponseBasicImpl.h in Headers */,
+				A026F58C16AECD940026995B /* HTTPServerEx.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7480275B16F0B0A200D7797A /* GLHTTPServerFrameworkMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7480277116F0B0A200D7797A /* Build configuration list for PBXNativeTarget "GLHTTPServerFrameworkMac" */;
+			buildPhases = (
+				7480275E16F0B0A200D7797A /* Sources */,
+				7480276516F0B0A200D7797A /* Frameworks */,
+				7480276716F0B0A200D7797A /* Headers */,
+				7480277016F0B0A200D7797A /* PrepareFramework */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7480277616F0B0EC00D7797A /* PBXTargetDependency */,
+			);
+			name = GLHTTPServerFrameworkMac;
+			productName = GLHTTPServerFramework;
+			productReference = 7480277416F0B0A200D7797A /* libGLHTTPServerFramework.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A0FA4E6C16AE66AC00A7F25A /* GLHTTPServerFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0FA4E9216AE66AF00A7F25A /* Build configuration list for PBXNativeTarget "GLHTTPServerFramework" */;
+			buildPhases = (
+				A0FA4E6916AE66AC00A7F25A /* Sources */,
+				A0FA4E6A16AE66AC00A7F25A /* Frameworks */,
+				A026F53D16AE7FCF0026995B /* Headers */,
+				A0FA4ED316AE692B00A7F25A /* PrepareFramework */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7480269616F09BAE00D7797A /* PBXTargetDependency */,
+			);
+			name = GLHTTPServerFramework;
+			productName = GLHTTPServerFramework;
+			productReference = A0FA4E6D16AE66AC00A7F25A /* libGLHTTPServerFramework.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A0FA4E7D16AE66AE00A7F25A /* GLHTTPServerFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0FA4E9516AE66AF00A7F25A /* Build configuration list for PBXNativeTarget "GLHTTPServerFrameworkTests" */;
+			buildPhases = (
+				A0FA4E7916AE66AE00A7F25A /* Sources */,
+				A0FA4E7A16AE66AE00A7F25A /* Frameworks */,
+				A0FA4E7B16AE66AE00A7F25A /* Resources */,
+				A0FA4E7C16AE66AE00A7F25A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0FA4E8516AE66AF00A7F25A /* PBXTargetDependency */,
+			);
+			name = GLHTTPServerFrameworkTests;
+			productName = GLHTTPServerFrameworkTests;
+			productReference = A0FA4E7E16AE66AE00A7F25A /* GLHTTPServerFrameworkTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		A0FA50BB16AFDF3B00A7F25A /* GLHTTPServerTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0FA50DB16AFDF3C00A7F25A /* Build configuration list for PBXNativeTarget "GLHTTPServerTestApp" */;
+			buildPhases = (
+				A0FA50B816AFDF3B00A7F25A /* Sources */,
+				A0FA50B916AFDF3B00A7F25A /* Frameworks */,
+				A0FA50BA16AFDF3B00A7F25A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0FA50DF16AFDF7A00A7F25A /* PBXTargetDependency */,
+			);
+			name = GLHTTPServerTestApp;
+			productName = GLHTTPServerTestApp;
+			productReference = A0FA50BC16AFDF3B00A7F25A /* GLHTTPServerTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0FA4E6416AE66AB00A7F25A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Globallogic;
+			};
+			buildConfigurationList = A0FA4E6716AE66AB00A7F25A /* Build configuration list for PBXProject "GLHTTPServerFramework" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A0FA4E6216AE66AB00A7F25A;
+			productRefGroup = A0FA4E6E16AE66AC00A7F25A /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7480268A16F09B8C00D7797A /* Products */;
+					ProjectRef = 7480268916F09B8C00D7797A /* CocoaHTTPServer.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				A0FA4E6C16AE66AC00A7F25A /* GLHTTPServerFramework */,
+				A0FA4E7D16AE66AE00A7F25A /* GLHTTPServerFrameworkTests */,
+				A0FA50BB16AFDF3B00A7F25A /* GLHTTPServerTestApp */,
+				E3A7E0D216B929D900AF7453 /* FrameworkGLHTTPServer */,
+				7480275B16F0B0A200D7797A /* GLHTTPServerFrameworkMac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7480269416F09B8C00D7797A /* libCocoaHTTPServer.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCocoaHTTPServer.a;
+			remoteRef = 7480269316F09B8C00D7797A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7480273416F0A9FF00D7797A /* libCocoaHTTPServer.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCocoaHTTPServer.a;
+			remoteRef = 7480273316F0A9FF00D7797A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0FA4E7B16AE66AE00A7F25A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0FA4E8C16AE66AF00A7F25A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0FA50BA16AFDF3B00A7F25A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0FA50C816AFDF3C00A7F25A /* InfoPlist.strings in Resources */,
+				A0FA50D016AFDF3C00A7F25A /* Default.png in Resources */,
+				A0FA50D216AFDF3C00A7F25A /* Default@2x.png in Resources */,
+				A0FA50D416AFDF3C00A7F25A /* Default-568h@2x.png in Resources */,
+				A0FA50DA16AFDF3C00A7F25A /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7480277016F0B0A200D7797A /* PrepareFramework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = PrepareFramework;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/${FRAMEWORK_VERSION}/Headers\"\n\n# Link the \"Current\" version to \"${FRAMEWORK_VERSION}\"\nln -sfh ${FRAMEWORK_VERSION} \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/Current\"\nln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Headers\"\nln -sfh \"Versions/Current/${PRODUCT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/${PRODUCT_NAME}\"\n\n# The -a ensures that the headers maintain the source modification date so that we don't constantly\n# cause propagating rebuilds of files that import these headers.\ncp -a \"${BUILT_PRODUCTS_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/${FRAMEWORK_VERSION}/Headers\"\n";
+		};
+		A0FA4E7C16AE66AE00A7F25A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		A0FA4ED316AE692B00A7F25A /* PrepareFramework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = PrepareFramework;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/${FRAMEWORK_VERSION}/Headers\"\n\n# Link the \"Current\" version to \"${FRAMEWORK_VERSION}\"\nln -sfh ${FRAMEWORK_VERSION} \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/Current\"\nln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Headers\"\nln -sfh \"Versions/Current/${PRODUCT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/${PRODUCT_NAME}\"\n\n# The -a ensures that the headers maintain the source modification date so that we don't constantly\n# cause propagating rebuilds of files that import these headers.\ncp -a \"${BUILT_PRODUCTS_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/${FRAMEWORK_VERSION}/Headers\"\n";
+		};
+		E3A7E0DC16B929EA00AF7453 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset +u\n# Avoid recursively calling this script.\nif [[ $SF_MASTER_SCRIPT_RUNNING ]]\nthen\nexit 0\nfi\nset -u\nexport SF_MASTER_SCRIPT_RUNNING=1\n\nSF_TARGET_NAME=${PROJECT_NAME}\nSF_EXECUTABLE_PATH=\"lib${SF_TARGET_NAME}.a\"\nSF_WRAPPER_NAME=\"${SF_TARGET_NAME}.framework\"\n\n# The following conditionals come from\n# https://github.com/kstenerud/iOS-Universal-Framework\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\nSF_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\nSF_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SF_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\nSF_OTHER_PLATFORM=iphonesimulator\nelse\nSF_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$SF_SDK_PLATFORM$ ]]\nthen\nSF_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${SF_OTHER_PLATFORM}\"\nelse\necho \"Could not find platform name from build products directory: $BUILT_PRODUCTS_DIR\"\nexit 1\nfi\n\n# Build the other platform.\nxcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${SF_OTHER_PLATFORM}${SF_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" OBJROOT=\"${OBJROOT}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\" $ACTION\n\n# Smash the two static libraries into one fat binary and store it in the .framework\nlipo -create \"${BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" -output \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/${FRAMEWORK_VERSION}/${SF_TARGET_NAME}\"\n\n# Copy the binary to the other architecture folder to have a complete framework in both.\ncp -a \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/${FRAMEWORK_VERSION}/${SF_TARGET_NAME}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/${FRAMEWORK_VERSION}/${SF_TARGET_NAME}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7480275E16F0B0A200D7797A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7480275F16F0B0A200D7797A /* GLHTTPServer.m in Sources */,
+				7480276016F0B0A200D7797A /* GLHTTPRequest.m in Sources */,
+				7480276116F0B0A200D7797A /* GLHTTPResponse.m in Sources */,
+				7480276216F0B0A200D7797A /* GLHTTPConnection.m in Sources */,
+				7480276316F0B0A200D7797A /* HTTPResponseBasicImpl.m in Sources */,
+				7480276416F0B0A200D7797A /* HTTPServerEx.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0FA4E6916AE66AC00A7F25A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0FA4ED116AE685200A7F25A /* GLHTTPServer.m in Sources */,
+				A0FA4F8916AEBC9500A7F25A /* GLHTTPRequest.m in Sources */,
+				A0FA4F8C16AEBC9600A7F25A /* GLHTTPResponse.m in Sources */,
+				A0FA4F9016AEC6C600A7F25A /* GLHTTPConnection.m in Sources */,
+				A026F58516AECC2A0026995B /* HTTPResponseBasicImpl.m in Sources */,
+				A026F58D16AECD940026995B /* HTTPServerEx.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0FA4E7916AE66AE00A7F25A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0FA4E8F16AE66AF00A7F25A /* GLHTTPServerFrameworkTests.m in Sources */,
+				A026F58616AECC2A0026995B /* HTTPResponseBasicImpl.m in Sources */,
+				A026F58E16AECD940026995B /* HTTPServerEx.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0FA50B816AFDF3B00A7F25A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0FA50CA16AFDF3C00A7F25A /* main.m in Sources */,
+				A0FA50CE16AFDF3C00A7F25A /* AppDelegate.m in Sources */,
+				A0FA50D716AFDF3C00A7F25A /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7480269616F09BAE00D7797A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaHTTPServer;
+			targetProxy = 7480269516F09BAE00D7797A /* PBXContainerItemProxy */;
+		};
+		7480277616F0B0EC00D7797A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaHTTPServerMac;
+			targetProxy = 7480277516F0B0EC00D7797A /* PBXContainerItemProxy */;
+		};
+		A0FA4E8516AE66AF00A7F25A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0FA4E6C16AE66AC00A7F25A /* GLHTTPServerFramework */;
+			targetProxy = A0FA4E8416AE66AF00A7F25A /* PBXContainerItemProxy */;
+		};
+		A0FA50DF16AFDF7A00A7F25A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0FA4E6C16AE66AC00A7F25A /* GLHTTPServerFramework */;
+			targetProxy = A0FA50DE16AFDF7A00A7F25A /* PBXContainerItemProxy */;
+		};
+		E3A7E0DE16B929F200AF7453 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0FA4E6C16AE66AC00A7F25A /* GLHTTPServerFramework */;
+			targetProxy = E3A7E0DD16B929F200AF7453 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		748026D116F0A81D00D7797A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				748026D216F0A81D00D7797A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A0FA4E8A16AE66AF00A7F25A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0FA4E8B16AE66AF00A7F25A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A0FA50C616AFDF3C00A7F25A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0FA50C716AFDF3C00A7F25A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A0FA50D816AFDF3C00A7F25A /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0FA50D916AFDF3C00A7F25A /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7480277216F0B0A200D7797A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				DSTROOT = /tmp/GLHTTPServerFramework.dst;
+				FRAMEWORK_SEARCH_PATHS = "${BUILT_PRODUCTS_DIR}";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLHTTPServerFramework/GLHTTPServerFramework-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = GLHTTPServerFramework;
+				PUBLIC_HEADERS_FOLDER_PATH = "${PROJECT_NAME}Headers";
+				SDKROOT = "";
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+				SUPPORTED_PLATFORMS = macosx;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Debug;
+		};
+		7480277316F0B0A200D7797A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				DSTROOT = /tmp/GLHTTPServerFramework.dst;
+				FRAMEWORK_SEARCH_PATHS = "${BUILT_PRODUCTS_DIR}";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLHTTPServerFramework/GLHTTPServerFramework-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = GLHTTPServerFramework;
+				PUBLIC_HEADERS_FOLDER_PATH = "${PROJECT_NAME}Headers";
+				SDKROOT = "";
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+				SUPPORTED_PLATFORMS = macosx;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Release;
+		};
+		A0FA4E9016AE66AF00A7F25A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv6 armv7 armv7s i386";
+			};
+			name = Debug;
+		};
+		A0FA4E9116AE66AF00A7F25A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv6 armv7 armv7s i386";
+			};
+			name = Release;
+		};
+		A0FA4E9316AE66AF00A7F25A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				DSTROOT = /tmp/GLHTTPServerFramework.dst;
+				FRAMEWORK_SEARCH_PATHS = "${BUILT_PRODUCTS_DIR}";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLHTTPServerFramework/GLHTTPServerFramework-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "${PROJECT_NAME}Headers";
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv6 armv7 armv7s i386";
+			};
+			name = Debug;
+		};
+		A0FA4E9416AE66AF00A7F25A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				DSTROOT = /tmp/GLHTTPServerFramework.dst;
+				FRAMEWORK_SEARCH_PATHS = "${BUILT_PRODUCTS_DIR}";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLHTTPServerFramework/GLHTTPServerFramework-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "${PROJECT_NAME}Headers";
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv6 armv7 armv7s i386";
+			};
+			name = Release;
+		};
+		A0FA4E9616AE66AF00A7F25A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLHTTPServerFramework/GLHTTPServerFramework-Prefix.pch";
+				INFOPLIST_FILE = "GLHTTPServerFrameworkTests/GLHTTPServerFrameworkTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A0FA4E9716AE66AF00A7F25A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLHTTPServerFramework/GLHTTPServerFramework-Prefix.pch";
+				INFOPLIST_FILE = "GLHTTPServerFrameworkTests/GLHTTPServerFrameworkTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		A0FA50DC16AFDF3C00A7F25A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLHTTPServerTestApp/GLHTTPServerTestApp-Prefix.pch";
+				INFOPLIST_FILE = "GLHTTPServerTestApp/GLHTTPServerTestApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A0FA50DD16AFDF3C00A7F25A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLHTTPServerTestApp/GLHTTPServerTestApp-Prefix.pch";
+				INFOPLIST_FILE = "GLHTTPServerTestApp/GLHTTPServerTestApp-Info.plist";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E3A7E0D316B929D900AF7453 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+			};
+			name = Debug;
+		};
+		E3A7E0D416B929D900AF7453 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7480277116F0B0A200D7797A /* Build configuration list for PBXNativeTarget "GLHTTPServerFrameworkMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7480277216F0B0A200D7797A /* Debug */,
+				7480277316F0B0A200D7797A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0FA4E6716AE66AB00A7F25A /* Build configuration list for PBXProject "GLHTTPServerFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0FA4E9016AE66AF00A7F25A /* Debug */,
+				A0FA4E9116AE66AF00A7F25A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0FA4E9216AE66AF00A7F25A /* Build configuration list for PBXNativeTarget "GLHTTPServerFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0FA4E9316AE66AF00A7F25A /* Debug */,
+				A0FA4E9416AE66AF00A7F25A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0FA4E9516AE66AF00A7F25A /* Build configuration list for PBXNativeTarget "GLHTTPServerFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0FA4E9616AE66AF00A7F25A /* Debug */,
+				A0FA4E9716AE66AF00A7F25A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0FA50DB16AFDF3C00A7F25A /* Build configuration list for PBXNativeTarget "GLHTTPServerTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0FA50DC16AFDF3C00A7F25A /* Debug */,
+				A0FA50DD16AFDF3C00A7F25A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3A7E0DA16B929D900AF7453 /* Build configuration list for PBXAggregateTarget "FrameworkGLHTTPServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3A7E0D316B929D900AF7453 /* Debug */,
+				E3A7E0D416B929D900AF7453 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0FA4E6416AE66AB00A7F25A /* Project object */;
+}

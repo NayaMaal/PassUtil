@@ -7,9 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7480267016F0583100D7797A /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 7480266F16F0583100D7797A /* main.c */; };
+		7480267016F0583100D7797A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7480266F16F0583100D7797A /* main.m */; };
 		7480267216F0583100D7797A /* PassUtil.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7480267116F0583100D7797A /* PassUtil.1 */; };
+		7480267B16F0587F00D7797A /* PassSigner.m in Sources */ = {isa = PBXBuildFile; fileRef = 7480267A16F0587F00D7797A /* PassSigner.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7480267D16F0594900D7797A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7480267C16F0594900D7797A /* Foundation.framework */; };
+		7480267F16F05B1900D7797A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7480267E16F05B1900D7797A /* Security.framework */; };
+		748027A716F0B40A00D7797A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748027A616F0B40A00D7797A /* CFNetwork.framework */; };
+		748027A916F0B57800D7797A /* libCocoaHTTPServer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 748027A816F0B57800D7797A /* libCocoaHTTPServer.a */; };
+		748027AB16F0B5A200D7797A /* libCocoaLumberjack.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 748027AA16F0B5A200D7797A /* libCocoaLumberjack.a */; };
+		748027E216F99A5F00D7797A /* PSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 748027E116F99A5F00D7797A /* PSUtil.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		748027C016F0B7FF00D7797A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 748027B316F0B7FE00D7797A /* CocoaHTTPServer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 84C08BBF149F64A0001D6500;
+			remoteInfo = CocoaHTTPServer;
+		};
+		748027C216F0B7FF00D7797A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 748027B316F0B7FE00D7797A /* CocoaHTTPServer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7480273116F0A98C00D7797A;
+			remoteInfo = CocoaHTTPServerMac;
+		};
+		748027C716F0B80500D7797A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 748027B316F0B7FE00D7797A /* CocoaHTTPServer.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 7480270616F0A98C00D7797A;
+			remoteInfo = CocoaHTTPServerMac;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		7480266916F0583100D7797A /* CopyFiles */ = {
@@ -26,8 +57,18 @@
 
 /* Begin PBXFileReference section */
 		7480266B16F0583100D7797A /* PassUtil */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PassUtil; sourceTree = BUILT_PRODUCTS_DIR; };
-		7480266F16F0583100D7797A /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		7480266F16F0583100D7797A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7480267116F0583100D7797A /* PassUtil.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = PassUtil.1; sourceTree = "<group>"; };
+		7480267916F0587F00D7797A /* PassSigner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PassSigner.h; path = PassSigner/PassSigner.h; sourceTree = "<group>"; };
+		7480267A16F0587F00D7797A /* PassSigner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PassSigner.m; path = PassSigner/PassSigner.m; sourceTree = "<group>"; };
+		7480267C16F0594900D7797A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7480267E16F05B1900D7797A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		748027A616F0B40A00D7797A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		748027A816F0B57800D7797A /* libCocoaHTTPServer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCocoaHTTPServer.a; path = Libs/CocoaHTTPServer/build/Release/libCocoaHTTPServer.a; sourceTree = "<group>"; };
+		748027AA16F0B5A200D7797A /* libCocoaLumberjack.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCocoaLumberjack.a; path = Libs/CocoaLumberjack/build/Release/libCocoaLumberjack.a; sourceTree = "<group>"; };
+		748027B316F0B7FE00D7797A /* CocoaHTTPServer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CocoaHTTPServer.xcodeproj; path = Libs/CocoaHTTPServer/CocoaHTTPServer.xcodeproj; sourceTree = "<group>"; };
+		748027E016F99A5F00D7797A /* PSUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSUtil.h; path = PassUtil/Util/PSUtil.h; sourceTree = "<group>"; };
+		748027E116F99A5F00D7797A /* PSUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSUtil.m; path = PassUtil/Util/PSUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +76,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				748027AB16F0B5A200D7797A /* libCocoaLumberjack.a in Frameworks */,
+				748027A916F0B57800D7797A /* libCocoaHTTPServer.a in Frameworks */,
+				748027A716F0B40A00D7797A /* CFNetwork.framework in Frameworks */,
+				7480267F16F05B1900D7797A /* Security.framework in Frameworks */,
+				7480267D16F0594900D7797A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +90,9 @@
 		7480266016F0583100D7797A = {
 			isa = PBXGroup;
 			children = (
+				748027AA16F0B5A200D7797A /* libCocoaLumberjack.a */,
+				748027A816F0B57800D7797A /* libCocoaHTTPServer.a */,
+				7480268016F09ACC00D7797A /* Libs */,
 				7480266E16F0583100D7797A /* PassUtil */,
 				7480266C16F0583100D7797A /* Products */,
 			);
@@ -60,10 +109,51 @@
 		7480266E16F0583100D7797A /* PassUtil */ = {
 			isa = PBXGroup;
 			children = (
-				7480266F16F0583100D7797A /* main.c */,
+				748027DF16F99A2000D7797A /* Util */,
+				7480267816F0587200D7797A /* PassSigner */,
+				7480266F16F0583100D7797A /* main.m */,
 				7480267116F0583100D7797A /* PassUtil.1 */,
 			);
 			path = PassUtil;
+			sourceTree = "<group>";
+		};
+		7480267816F0587200D7797A /* PassSigner */ = {
+			isa = PBXGroup;
+			children = (
+				7480267916F0587F00D7797A /* PassSigner.h */,
+				7480267A16F0587F00D7797A /* PassSigner.m */,
+			);
+			name = PassSigner;
+			sourceTree = "<group>";
+		};
+		7480268016F09ACC00D7797A /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				748027B316F0B7FE00D7797A /* CocoaHTTPServer.xcodeproj */,
+				748027A616F0B40A00D7797A /* CFNetwork.framework */,
+				7480267C16F0594900D7797A /* Foundation.framework */,
+				7480267E16F05B1900D7797A /* Security.framework */,
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
+		748027B416F0B7FE00D7797A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				748027C116F0B7FF00D7797A /* libCocoaHTTPServer.a */,
+				748027C316F0B7FF00D7797A /* libCocoaHTTPServer.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		748027DF16F99A2000D7797A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				748027E016F99A5F00D7797A /* PSUtil.h */,
+				748027E116F99A5F00D7797A /* PSUtil.m */,
+			);
+			name = Util;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,6 +170,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				748027C816F0B80500D7797A /* PBXTargetDependency */,
 			);
 			name = PassUtil;
 			productName = PassUtil;
@@ -105,6 +196,12 @@
 			mainGroup = 7480266016F0583100D7797A;
 			productRefGroup = 7480266C16F0583100D7797A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 748027B416F0B7FE00D7797A /* Products */;
+					ProjectRef = 748027B316F0B7FE00D7797A /* CocoaHTTPServer.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				7480266A16F0583100D7797A /* PassUtil */,
@@ -112,16 +209,43 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		748027C116F0B7FF00D7797A /* libCocoaHTTPServer.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCocoaHTTPServer.a;
+			remoteRef = 748027C016F0B7FF00D7797A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		748027C316F0B7FF00D7797A /* libCocoaHTTPServer.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCocoaHTTPServer.a;
+			remoteRef = 748027C216F0B7FF00D7797A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7480266716F0583100D7797A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7480267016F0583100D7797A /* main.c in Sources */,
+				7480267016F0583100D7797A /* main.m in Sources */,
+				7480267B16F0587F00D7797A /* PassSigner.m in Sources */,
+				748027E216F99A5F00D7797A /* PSUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		748027C816F0B80500D7797A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaHTTPServerMac;
+			targetProxy = 748027C716F0B80500D7797A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		7480267316F0583100D7797A /* Debug */ = {
@@ -180,6 +304,7 @@
 		7480267616F0583100D7797A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -187,6 +312,7 @@
 		7480267716F0583100D7797A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -210,6 +336,7 @@
 				7480267716F0583100D7797A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

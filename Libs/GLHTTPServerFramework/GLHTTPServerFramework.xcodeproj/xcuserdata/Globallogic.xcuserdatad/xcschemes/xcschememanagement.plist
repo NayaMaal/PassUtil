@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>GLHTTPServerFramework copy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>GLHTTPServerFramework.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>GLHTTPServerFrameworkMac.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+		<key>GLHTTPServerTestApp.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>748026C616F0A81D00D7797A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>748026E316F0A86100D7797A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7480275B16F0B0A200D7797A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A0FA4E6C16AE66AC00A7F25A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A0FA4E7D16AE66AE00A7F25A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A0FA50BB16AFDF3B00A7F25A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E3A7E0D216B929D900AF7453</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
